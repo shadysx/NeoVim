@@ -15,6 +15,18 @@ lsp.set_preferences({
   sign_icons = { }
 })
 
+-- TODO --
+lsp.ensure_installed({
+	'tsserver',
+	'eslint',
+	'sumneko_lua',
+	'rust_analyzer',
+})
+lsp.setup_nvim_cmp({
+	mapping = cmp_mappings
+})
+---------------------
+
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
