@@ -6,9 +6,10 @@
  sudo apt-get install neovim
 ```
 
-## 2. Install gcc
+## 2. Install dependencies
 ```
 sudo apt install gcc
+sudo apt install nodejs npm
 ```
 
 ## 3. Install packer (Unix/Linux && Wsl)
